@@ -3,4 +3,4 @@ julia:
   - 1.0.2
 script: julia runner.jl test
 coveralls: true
-after_success: julia runner.js coverage
+after_success: julia runner.jl coverage
