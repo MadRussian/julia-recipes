@@ -1,0 +1,14 @@
+name = "JuliaRecipes"
+uuid = "a8ac0b6a-f77d-11e8-2dd6-5356f07111d5"
+authors = ["MadRussian"]
+version = "0.1.0"
+
+[deps]
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
