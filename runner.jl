@@ -2,6 +2,10 @@ if size(ARGS, 1) < 1
   println("Not enough arguments")
 elseif ARGS[1] == "test"
   using Pkg
+  Pkg.add("Coverage")
+  using Coverage
+  clean_folder("src")
+
   Pkg.build("JuliaRecipes")
   Pkg.test("JuliaRecipes", coverage=true)
 elseif ARGS[1] == "coverage"
