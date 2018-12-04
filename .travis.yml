@@ -1,5 +1,6 @@
 language: julia
 julia:
   - 1.0.2
+script: julia runner.jl test
 coveralls: true
-script: julia build_tests.jl
+after_success: julia runner.js coverage
